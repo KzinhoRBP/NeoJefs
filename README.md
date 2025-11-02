@@ -86,25 +86,6 @@ Consulta de Clima: Digite “Como está o clima em [cidade]?” para obter a pre
 Sistema de Login e Cadastro: Registre-se e faça login para ter uma experiência personalizada.
 Reconhecimento de voz: Use o microfone para enviar mensagens por fala.
 
-🧪 **Estrutura de Pastas**
-
-NeoJefs/
-├── server.js               ← Backend com Express e rotas
-├── banco.db                ← Banco de dados SQLite
-├── apikey.env              ← Arquivo com as chaves das APIs (NÃO versionar)
-├── package.json
-└── public/
-    ├── index.html          ← Página principal do chat
-    ├── login.html          ← Tela de login
-    ├── register.html       ← Tela de cadastro
-    ├── style.css           ← Estilo do projeto
-    ├── script.js           ← Script principal do chat
-    ├── login.js            ← Script da tela de login
-    ├── register.js         ← Script da tela de cadastro
-    └── img/
-        ├── mic.png         ← Ícone do microfone
-        └── send.png        ← Ícone de envio
-
 📋 **Exemplos de Uso**
 
 "Como está o clima em Botucatu?"
@@ -115,8 +96,9 @@ NeoJefs/
 🧠 **Detalhes da IA**
 A IA é configurada com:
 
-temperature: 0.7,
-max_tokens: 700
+model: 'o4-mini',
+messages: contextMessages,
+max_completion_tokens: 1500
 
 Isso garante respostas equilibradas, informativas e personalizadas com base no prompt pré-programado, que inclui contexto e instruções específicas sobre comportamento.
 
