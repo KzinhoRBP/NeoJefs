@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NeoJefs - Assistente Pessoal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- BOTÕES DE ACESSIBILIDADE -->
+    <div class="accessibility-buttons">
+      <button id="voice-toggle" title="Leitura de tela" aria-pressed="false">
+        <img src="img/leitor.png" alt="Leitura de tela" />
+      </button>
+      <button id="contrast-toggle" title="Alto contraste" aria-pressed="false">
+        <img src="img/olho-fechado.png" alt="Alternar contraste" />
+      </button>
+      <button id="theme-toggle" title="Modo claro/escuro" aria-pressed="false">
+        <img src="img/modo-escuro.png" alt="Alternar tema" />
+      </button>
+    </div>
+
+    <!-- LOGO NEOJEFS (barras) -->
+    <div class="box-container">
+      <div class="box box-1"></div>
+      <div class="box box-2"></div>
+      <div class="box box-3"></div>
+      <div class="box box-4"></div>
+      <div class="box box-5"></div>
+    </div>
+
+    <!-- CAIXA DE CHAT -->
+    <div id="chat-box" class="chat-box"></div>
+
+    <!-- INPUT + BOTÕES -->
+    <div class="chat-input-container">
+      <input type="text" id="user-question" placeholder="Como posso te ajudar..." class="chat-input" autocomplete="off"/>
+      <button id="send-btn" class="send-btn" title="Enviar">
+        <img src="img/send.png" alt="Enviar" />
+      </button>
+      <button id="microphone-btn" class="microphone-btn" title="Falar">
+        <img src="img/mic.png" alt="Microfone" />
+      </button>
+    </div>
+  </div>
+
+  <!-- Script principal do chatbot -->
+  <script src="script.js"></script>
+</body>
+</html>

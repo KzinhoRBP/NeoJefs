@@ -1,0 +1,29 @@
+===============================
+Instruções para iniciar o NeoJefs
+===============================
+
+1. Abra o arquivo iniciar_neojefs.bat ou o código abaixo:
+
+@echo off
+cd /d "D:\TCC\NeoJefs"
+npm start
+pause
+
+2. Altere o caminho "D:\TCC\NeoJefs" para a pasta onde você salvou o NeoJefs no seu computador.
+   Exemplo: 
+   cd /d "C:\Users\SeuUsuario\Documentos\NeoJefs"
+
+3. Salve o arquivo depois de alterar.
+
+4. Dê duplo clique no arquivo .bat para executar.
+   Isso vai iniciar o servidor do NeoJefs.
+
+5. Abra o navegador de sua preferência e digite o link:
+   http://localhost:3000
+   (ou copie e cole na barra de endereços)
+
+6. Agora você poderá testar o NeoJefs funcionando no seu navegador.
+
+Dicas:
+- Certifique-se de que o Node.js e o npm estão instalados.
+- Se a porta 3000 estiver ocupada, verifique qual porta o npm start está usando.
